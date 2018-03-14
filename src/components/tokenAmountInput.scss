@@ -1,0 +1,50 @@
+@import '../styles/global-variables.scss';
+
+.token-amount-input-container{
+  display: flex;
+  flex-flow: row nowrap;
+  height: $input-height;
+  justify-content: center;
+}
+
+input.token-amount-input-field {
+  display: block;
+  padding: .6em .8em .5em;
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+  background-image: none;
+  color: $text-default;
+  font-size: 1.2em;
+  background: $white;
+  -webkit-appearance: none;
+}
+
+input.token-amount-input-field+.token-amount-input-symbol-label,
+input.token-amount-input-field {
+  border-bottom: 2px solid $grey-200;
+}
+
+input.token-amount-input-field::-webkit-outer-spin-button,
+input.token-amount-input-field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input.token-amount-input-field:focus {
+  outline: 0;
+  color: $text-default;
+  -webkit-appearance: none;
+}
+
+ input.token-amount-input-field:focus,
+ input.token-amount-input-field:focus+.token-amount-input-symbol-label {
+    border-color: $primary;
+    transition: all .2s ease;
+ }
+
+.token-amount-input-symbol-label {
+  display: flex;
+  align-items: center;
+  width: 40px;
+}

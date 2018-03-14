@@ -1,0 +1,67 @@
+$font-family-primary: 'Open Sans', sans-serif;
+
+//text color
+$text-dark: #1b2733;
+$text-light: #637282;
+$text-default: #1b2733;
+$text-secondary: #95A6B7;
+
+$white: #fff;
+$primary: #9DD960;
+$primary-dark: #85D931;
+
+//card
+$card-box-shadow: 0 1px 8px 0 rgba(0,0,0,.06),
+    0 3px 4px 0 rgba(0,0,0,.04), 
+    0 3px 3px -2px rgba(0,0,0,.02);
+    
+//input
+$input-height: 44px;
+$input-margin-bottom: 16px;
+$input-sm-width: 140px;
+
+//component 
+$component-max-width: 740px;
+$border-radius: 4px;
+
+//grey
+$grey-50: #e6e8eb;
+$grey-100: #F5F5F5;
+$grey-200: #EEEEEE;
+$grey-300: #E0E0E0;
+$grey-400: #BDBDBD;
+$grey-500: #9E9E9E;
+$grey-600: #757575;
+$grey-700: #616161;
+$grey-800: #424242;
+$grey-900: #212121;
+
+//button
+$btn-disabled-background: $grey-200;
+$btn-disabled-txt: $grey-500;
+
+//media-queries
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-portait-only {
+  @media (min-width: 600px) and (max-width: 899px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-tablet-landscape-only {
+  @media (min-width: 900px) and (max-width: 1199px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-desktop-only {
+  @media (min-width: 1200px) and (max-width: 1799px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}

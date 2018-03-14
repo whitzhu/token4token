@@ -1,0 +1,27 @@
+@import '../styles/global-variables.scss';
+
+.taker-address-input-field-label {
+  margin-bottom: 6px;
+}
+
+input.taker-address-input-field {
+  display: block;
+  padding: .6em .8em .5em;
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+  background-image: none;
+  color: $text-default;
+  font-size: 1.2em;
+  background: $white;
+  border-bottom: 2px solid $grey-200;
+  -webkit-appearance: none;
+}
+
+input.taker-address-input-field.error {
+  border-color: red;
+}
+
+.taker-address-input-error-msg {
+  color: red;
+}

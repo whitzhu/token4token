@@ -1,0 +1,104 @@
+@import './global-variables.scss';
+
+html {
+  overflow-y: hidden;
+}
+
+body {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+body, html {
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: $font-family-primary;
+  font: 400 15px/22px 'Open Sans';
+  color: $text-default;
+  webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.btn{
+  min-width: 120px;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: $border-radius;
+  justify-content: space-evenly;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  transition-delay: initial;
+
+  &.btn-lg {
+    padding: 14px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  &.btn-md {
+    padding: 10px;
+  }
+
+  &.primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: #fff;
+
+    &:hover {
+      background-color: $primary-dark;
+    }
+  }
+
+  &.outline {
+    border-color: $primary;
+    background-color: $white;
+  }
+
+  &:disabled {
+    background-color: $btn-disabled-background;
+    border-color: $btn-disabled-background;
+    color: $btn-disabled-txt;
+
+    &:hover {
+      background-color: $btn-disabled-background;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.page-container {
+  padding: 20px 12px 40px 12px;
+
+  @include for-tablet-portrait-up { 
+    max-width: $component-max-width;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 100px;
+  }
+}
+
+.input-field-label {
+  margin-bottom: 12px;
+}

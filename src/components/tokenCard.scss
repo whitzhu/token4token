@@ -1,0 +1,13 @@
+@import '../styles/global-variables.scss';
+
+.token-card {
+  position: relative;
+  box-shadow: $card-box-shadow;
+  margin-bottom: 16px;
+  border-radius: $border-radius;
+}
+
+.token-card-token-amount-input-container {
+  height: 100px;
+  padding: 20px;
+}

@@ -1,0 +1,40 @@
+@import '../styles/global-variables.scss';
+
+%order-msg {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.place-order-taker-address-container {
+  padding: 20px 0;
+}
+
+.place-order-container-header {
+  height: 40px;
+  border-bottom: 1px solid;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.place-order-container-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.place-order-taker-button-container {
+  margin: 24px 0;
+}
+
+.place-order-error-msg {
+  color: red;
+  @extend %order-msg;
+}
+
+.place-order-success-msg {
+  color: $primary;
+  @extend %order-msg;
+}
